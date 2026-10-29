@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rohan Solse</title>
+    <meta name="description" content="Personal site of Rohan Solse — links to my resume and projects." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #16181d;
+        --muted: #5b6270;
+        --line: #e4e7ec;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101217;
+          --fg: #f2f4f8;
+          --muted: #9aa3b2;
+          --line: #262b35;
+        }
+      }
+
+      body {
+        margin: 0;
+        padding: 16px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: 100%;
+        max-width: 32rem;
+      }
+
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 1.75rem;
+        letter-spacing: -0.01em;
+      }
+
+      p {
+        margin: 0 0 2rem;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid var(--line);
+      }
+
+      li {
+        border-bottom: 1px solid var(--line);
+      }
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.9rem 0;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover span:first-child,
+      a:focus-visible span:first-child {
+        text-decoration: underline;
+      }
+
+      a span:last-child {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      footer {
+        margin-top: 2rem;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Rohan Solse</h1>
+      <p>Full-stack engineer, Mumbai. A few things I host here.</p>
+
+      <ul>
+        <li>
+          <a href="/resume/"><span>Resume</span><span>rohansolse.github.io/resume</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/rohansolse"><span>GitHub</span><span>github.com/rohansolse</span></a>
+        </li>
+      </ul>
+
+      <footer>Personal pages only — no sign-in, no downloads, no payments.</footer>
+    </main>
+  </body>
+</html>
